@@ -446,6 +446,9 @@ namespace TerrariaApi.Server
 						}
 						Netplay.Clients[buffer.whoAmI].ClientUUID = "";
 						return true;
+
+					case PacketTypes.SyncMod:
+						return false;
 				}
 			}
 

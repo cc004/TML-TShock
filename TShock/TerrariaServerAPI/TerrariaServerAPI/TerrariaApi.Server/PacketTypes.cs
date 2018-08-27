@@ -122,5 +122,11 @@ public enum PacketTypes
 	CrystalInvasionSendWaitTime = 116,
 	PlayerHurtV2 = 117,
 	PlayerDeathV2 = 118,
-	CreateCombatTextExtended = 119
+	CreateCombatTextExtended = 119,
+
+	#region tModLoader Packet
+	ModPacket = 250,
+	SyncMod = 251,
+	SendMod = 252
+	#endregion
 }
