@@ -1,0 +1,6 @@
+[submodule "TShock"]
+	path = TShock
+	url = https://github.com/AxeelAnder/TShock.git
+[submodule "TML-TShockPatcher"]
+	path = TML-TShockPatcher
+	url = https://github.com/AxeelAnder/TML-TShockPatcher.git
