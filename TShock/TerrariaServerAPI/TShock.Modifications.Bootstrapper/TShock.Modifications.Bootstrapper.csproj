@@ -66,8 +66,9 @@
     <Reference Include="NuGet.Core, Version=2.14.0.832, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\NuGet.Core.2.14.0\lib\net40-Client\NuGet.Core.dll</HintPath>
     </Reference>
-    <Reference Include="OTAPI">
-      <HintPath>..\..\..\OTAPI\OTAPI.dll</HintPath>
+    <Reference Include="OTAPI, Version=1.3.5.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\TML-TShockPatcher\TML-TShockPatcher\bin\Debug\Output\OTAPI.dll</HintPath>
     </Reference>
     <Reference Include="OTAPI.Patcher.Engine">
       <HintPath>..\prebuilt\OTAPI.Patcher.Engine.dll</HintPath>
