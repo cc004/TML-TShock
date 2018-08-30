@@ -79,8 +79,9 @@ namespace OTAPI.Patcher.Engine.Extensions
 
 			foreach (var itm in type.Methods)
 			{
+                if (itm.IsFamily) continue;
 				itm.IsPublic = true;
-				if (itm.IsFamily) itm.IsFamily = false;
+				//if (itm.IsFamily) itm.IsFamily = false;
 				if (itm.IsFamilyAndAssembly) itm.IsFamilyAndAssembly = false;
 				if (itm.IsFamilyOrAssembly) itm.IsFamilyOrAssembly = false;
 				if (itm.IsPrivate) itm.IsPrivate = false;
