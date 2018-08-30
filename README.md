@@ -4,7 +4,17 @@ This project demonstrates how you can get tModLoader (windows server) working al
 
 ![Alt text](/Screenshots/ts_and_tml.png?raw=true "TML & TShock ")
 ![Alt text](/Screenshots/ts_cmd_tml_pc.png?raw=true "Optional Title")
+![Alt text](/Screenshots/in_server.png?raw=true "Optional Title")
 
+## TODOs of this fork
+Let TShock's SSC fits with mods. 
+
+Expand TShock's commands like /i,/sm,etc. 
+
+Fix other bug when load mods. 
+
+
+## DeathCradle:
 I personally will not be continuing work on this as I have other priority work I need to focus on. 
 Feel free to fork and maintain yourself!
 
