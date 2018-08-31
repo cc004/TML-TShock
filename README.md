@@ -11,7 +11,9 @@ Let TShock's SSC fits with mods.
 
 Expand TShock's commands like /i,/sm,etc. 
 
-Fix other bug when load mods. 
+Fix other bugs when load mods. 
+
+Fix  dropitems and projectiles couldn't exist.(Need Help)
 
 
 ## DeathCradle:
