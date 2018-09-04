@@ -65,23 +65,23 @@ namespace OTAPI.Patcher.Engine.Extensions
 				state = false;
 			}
 
-			if (type.IsNotPublic)
-			{
-				type.IsNotPublic = false;
-			}
-
 			if (type.IsSealed && type.IsBeforeFieldInit && type.IsClass)
 			{
 				type.IsSealed = false;
-			}
+            }
 
 			type.IsPublic = state;
+            
+            if (type.IsNotPublic)
+            {
+                type.IsNotPublic = false;
+                type.IsPublic = true;
+            }
 
-			foreach (var itm in type.Methods)
+            foreach (var itm in type.Methods)
 			{
-                if (itm.IsFamily) continue;
 				itm.IsPublic = true;
-				//if (itm.IsFamily) itm.IsFamily = false;
+				if (itm.IsFamily) itm.IsFamily = false;
 				if (itm.IsFamilyAndAssembly) itm.IsFamilyAndAssembly = false;
 				if (itm.IsFamilyOrAssembly) itm.IsFamilyOrAssembly = false;
 				if (itm.IsPrivate) itm.IsPrivate = false;
