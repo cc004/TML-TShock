@@ -6,15 +6,13 @@ This project demonstrates how you can get tModLoader (windows server) working al
 ![Alt text](/Screenshots/ts_cmd_tml_pc.png?raw=true "Optional Title")
 ![Alt text](/Screenshots/in_server.png?raw=true "Optional Title")
 
-## TODOs of this fork
-Let TShock's SSC fits with mods. 
 
-Expand TShock's commands like /i,/sm,etc. 
+## TODOs of this fork
+Let TShock's SSC fits with mods.   
+- Need to make a mod extends packet types.
 
 Fix other bugs when load mods. 
-
-Fix  dropitems and projectiles couldn't exist.(Need Help)
-
+- Some mods(like calamity) recreate he map(Main.tile) when loading
 
 ## DeathCradle:
 I personally will not be continuing work on this as I have other priority work I need to focus on. 
