@@ -8,8 +8,8 @@ This project demonstrates how you can get tModLoader (windows server) working al
 
 
 ## TODOs of this fork
-Let TShock's SSC fits with mods.   
-- Need to make a mod extends packet types.
+
+Fix other reflection errors.
 
 Fix other bugs when load mods. 
 - Some mods(like calamity) recreate he map(Main.tile) when loading
