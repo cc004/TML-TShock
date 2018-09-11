@@ -6,17 +6,6 @@ This project demonstrates how you can get tModLoader (windows server) working al
 ![Alt text](/Screenshots/ts_cmd_tml_pc.png?raw=true "Optional Title")
 ![Alt text](/Screenshots/in_server.png?raw=true "Optional Title")
 
-## Test Server  
-ip: story.trboss.ml  
-port: 7777  
-Modlist:  
-Thorium v1.5.0.4  
-AlchemistNPC v7.4  
-RecipeBrowser v0.6.1.7  
-RPG v0.4.3  
-PacketExtension  
-
-
 ## TODOs of this fork
 
 Fix other bugs when load mods. 
