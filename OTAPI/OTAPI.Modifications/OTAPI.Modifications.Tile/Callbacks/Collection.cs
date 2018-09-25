@@ -5,10 +5,22 @@ using System.Reflection.Emit;
 
 namespace OTAPI.Callbacks.Terraria
 {
-	internal static class Collection
+	public static class Collection
 	{
 		public static ITileCollection Create()
 		{
+			//Fire the hook to allow a consumer to specify a custom implementation
+			ITileCollection collection = Hooks.Tile.CreateCollection?.Invoke();
+
+			//Either return the custom provider, or use the default one.
+			return collection ?? new DefaultTileCollection();
+		}
+
+		public static ITileCollection Create(int maxX, int maxY)
+		{
+			global::Terraria.Main.maxTilesX = maxX;
+			global::Terraria.Main.maxTilesY = maxY;
+
 			//Fire the hook to allow a consumer to specify a custom implementation
 			ITileCollection collection = Hooks.Tile.CreateCollection?.Invoke();
 
