@@ -6,10 +6,29 @@ This project demonstrates how you can get tModLoader (windows server) working al
 ![Alt text](/Screenshots/ts_cmd_tml_pc.png?raw=true "Optional Title")
 ![Alt text](/Screenshots/in_server.png?raw=true "Optional Title")
 
-## TODOs of this fork
 
-Fix other bugs when load mods. 
-- Some mods(like calamity) recreate he map(Main.tile) when loading
+
+## Build & Compile
+
+#### 1. Run git commands  
+>`git clone https://github.com/AxeelAnder/TML-TShock`  
+>`git submodule update --init --recursive`  
+
+#### 2. Build and run OTAPI  
+Run `./OTAPI/prebuild.ps1`   
+Place `./TML/ReLogic.dll` into `./OTAPI/wrap/TerrariaServer/`  
+Open `./OTAPI/OTAPI.Server.sln` and build whole solution  
+Run OTAPI patcher and it will generate `./OTAPI/OTAPI.dll` when completed 
+
+#### 3. Build and run TML-TShock Patcher
+Just open the solution and build  
+For convenience I move TShock's modifications(Modifications in TShock.4.OTAPI) to this patcher so they can be patched together  
+You can do it, too. Just built them then copy directories to `./TML-TShockPatcher/Modifications/`  
+>Or you can run TShock.Modifications.Bootstrapper   
+>Then change TShock's reference of OTAPI.dll to `/TShock/TerrariaServerAPI/TShock.Modifications.Bootstrapper/bin/Debug/Output/OTAPI.dll` 
+
+#### 4. Build TShock
+Nothing need to explain, if you have problems, just contact with me. I'll reply as soon as possible.  
 
 ## DeathCradle:
 I personally will not be continuing work on this as I have other priority work I need to focus on. 
